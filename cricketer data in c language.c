@@ -26,7 +26,6 @@ int main() {
         scanf("%f", &players[i].average_runs);
     }
 
-    // Sort by average_runs in ascending order
     for (i = 0; i < 9; i++) {
         for (j = i + 1; j < 10; j++) {
             if (players[i].average_runs > players[j].average_runs) {
@@ -37,7 +36,6 @@ int main() {
         }
     }
 
-    // Display sorted data
     printf("\nCricketers sorted by Average Runs (Ascending Order):\n");
     for (i = 0; i < 10; i++) {
         printf("\nCricketer %d:\n", i + 1);
@@ -48,4 +46,5 @@ int main() {
     }
 
     return 0;
+
 }
